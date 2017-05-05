@@ -1,0 +1,45 @@
+@media (max-width: 991px) {
+  .container-fluid {
+    .row {
+      form {
+        font-size: 1.4em;
+        .error {
+          color: red;
+          text-align: left;
+        }
+        .textarea_error {
+          border-color: red;
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 992px) {
+  .container-fluid {
+    .row {
+      form {
+        font-size: 1.2em;
+        .error {
+          color: red;
+          text-align: left;
+        }
+        .textarea_error {
+          border-color: red;
+        }
+        .btn-default {
+          transition-duration: 0.4s;
+          background-color: white;
+          color: black;
+          border: 2px solid $black;
+          width: 20%;
+          &:hover {
+            background-color: $black;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

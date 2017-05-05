@@ -1,0 +1,11 @@
+{
+  "development": {
+    "MONGODB_URI":"mongodb://localhost/cook_book",
+    "PORT": 3000
+
+  },
+  "test": {
+    "MONGODB_URI":"mongodb://localhost/cook_book_test",
+    "PORT": 3000
+  }
+}

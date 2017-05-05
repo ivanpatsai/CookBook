@@ -1,0 +1,4 @@
+client/public
+.idea/
+node_modules/
+!/client/public/.gitkeep
