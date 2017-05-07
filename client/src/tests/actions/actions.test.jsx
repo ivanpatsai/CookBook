@@ -108,9 +108,10 @@ describe('Actions', () => {
   //
   //     return store.dispatch(actions.startAddRecipe(recipeText)).then(() => {
   //       const actionsS = store.getActions();
-  //       expect(actionsS[0]).toInclude({
-  //         type: actions.ADD_RECIPE
-  //       });
+  //       expect(actionsS.length).toBe(1);
+  //       // expect(actionsS).toInclude({
+  //       //   type: actions.ADD_RECIPE
+  //       // });
   //       done();
   //     }).catch(done);
   //   });

@@ -1,6 +1,7 @@
 {
   "development": {
-    "MONGODB_URI":"mongodb://localhost/cook_book",
+    "_MONGODB_URI":"mongodb://localhost/cook_book",
+    "MONGODB_URI":"mongodb://omar:password@ds023452.mlab.com:23452/cookbook",
     "PORT": 3000
 
   },

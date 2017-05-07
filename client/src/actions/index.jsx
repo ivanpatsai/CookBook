@@ -40,7 +40,6 @@ export const fetchRecipe = (recipe) => {
 export const startFetchRecipe = (id) => {
   return (dispatch, getState) => {
     axios.get(`/recipes/${id}`).then(({data}) => {
-      // history.push(`/${id}/edit`);
       dispatch(fetchRecipe(data));
     })
   }
@@ -54,14 +53,13 @@ export const addRecipe = () => {
   )
 };
 
-export function startAddRecipe (text) {
+export const startAddRecipe = (text) => {
   return (dispatch, getState) => {
      axios.post('/recipes', text).then(({data}) => {
       history.push('/');
       dispatch(addRecipe());
     }).catch(response => {
       console.log(response)
-      //callingRefresh(response,"/feature",dispatch);
     });
   }
 };
@@ -111,7 +109,6 @@ export const fetchHistory = (history) => {
       payload: history
     }
   )
-
 };
 
 export const startFetchHistory = (id) => {
